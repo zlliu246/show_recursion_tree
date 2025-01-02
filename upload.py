@@ -14,7 +14,7 @@ with open('pyproject.toml') as f:
     text = f.read()
 
 # "python -m upload.py --nowrite" if you don't want this script to increment version in pyproject.toml
-if "--nowrite" in sys.argv:
+if "--nowrite" not in sys.argv:
     print("incrementing version by 1 in pyproject.toml")
     old_version: str = re.findall('version = "(.*?)"', text)[0]     # "0.0.4"
     major, minor, patch = old_version.split('.')                    # major="0" minor="0" patch="4"
