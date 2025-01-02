@@ -35,5 +35,5 @@ class Data:
     def pop(cls, func_output: Any):
         node = cls.stack.pop()
         # add func_output into node's val
-        node.val = f"{node.val} => {func_output}"
+        node.val = f"{node.val}:{func_output}"
         return node

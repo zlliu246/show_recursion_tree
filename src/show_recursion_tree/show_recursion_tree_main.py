@@ -27,26 +27,4 @@ def show_recursion_tree(func):
         return func_output
     
     return wrapper
-
-"""
-
-start (5,) {}
-start (3,) {}
-start (1,) {}
-end (1,) {} 1
-start (2,) {}
-end (2,) {} 1
-end (3,) {} 2
-start (4,) {}
-start (2,) {}
-end (2,) {} 1
-start (3,) {}
-start (1,) {}
-end (1,) {} 1
-start (2,) {}
-end (2,) {} 1
-end (3,) {} 2
-end (4,) {} 3
-end (5,) {} 5
-
-"""
+    
